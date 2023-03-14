@@ -1,14 +1,14 @@
 package com.schule.schule.fit_for_future.interfaces;
 
 public interface Kunde {
-    void setId(int id);
-    int getId();
+    void setId(String id);
+    String getId();
     void setName(String name);
     String getName();
-    void setGewicht(int gewicht);
-    int getGewicht();
-    void setGroesse(int groesse);
-    int getGroesse();
+    void setGewicht(double gewicht);
+    double getGewicht();
+    void setGroesse(double groesse);
+    double getGroesse();
     double getBMI();
 
 }

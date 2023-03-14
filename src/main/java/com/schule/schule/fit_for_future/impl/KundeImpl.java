@@ -11,18 +11,18 @@ public class KundeImpl implements Kunde {
     @Autowired
     BMIRechner bmiRechner;
 
-    private int id;
+    private String id;
     private String name;
-    private int gewicht;
-    private int groesse;
+    private double gewicht;
+    private double groesse;
 
     @Override
-    public int getId() {
+    public String getId() {
         return id;
     }
 
     @Override
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
@@ -37,22 +37,22 @@ public class KundeImpl implements Kunde {
     }
 
     @Override
-    public int getGewicht() {
+    public double getGewicht() {
         return gewicht;
     }
 
     @Override
-    public void setGewicht(int gewicht) {
+    public void setGewicht(double gewicht) {
         this.gewicht = gewicht;
     }
 
     @Override
-    public int getGroesse() {
+    public double getGroesse() {
         return groesse;
     }
 
     @Override
-    public void setGroesse(int groesse) {
+    public void setGroesse(double groesse) {
         this.groesse = groesse;
     }
 
